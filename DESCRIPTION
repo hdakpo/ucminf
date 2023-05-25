@@ -1,8 +1,7 @@
 Package: ucminf
 Title: General-Purpose Unconstrained Non-Linear Optimization
 Version: 1.2.0
-Authors@R: 
-    Authors@R: c(
+Authors@R: c(
     person("K Hervé", "Dakpo", , "k-herve.dakpo@inrae.fr", role = c("aut", "cre")),
     person("Hans Bruun", "Nielsen", role = "aut"),
     person("Stig Bousgaard", "Mortensen", role = "aut")
