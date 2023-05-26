@@ -6,6 +6,11 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/hdakpo/ucminf/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hdakpo/ucminf/actions/workflows/R-CMD-check.yaml)
+[![Downloads](https://cranlogs.r-pkg.org/badges/ucminf)](https://CRAN.R-project.org/package=ucminf)
+[![](https://img.shields.io/github/languages/code-size/hdakpo/ucminf.svg)](https://github.com/hdakpo/ucminf)
+[![](https://img.shields.io/badge/license-GPL-blue)](https://github.com/hdakpo/ucminf)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/ucminf)](https://CRAN.R-project.org/package=ucminf)
 <!-- badges: end -->
 
 The goal of *ucminf* is to provide an algorithm for general-purpose
