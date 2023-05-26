@@ -4,6 +4,8 @@
 # ucminf
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/hdakpo/ucminf/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hdakpo/ucminf/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of *ucminf* is to provide an algorithm for general-purpose
