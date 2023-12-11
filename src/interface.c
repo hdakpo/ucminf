@@ -8,6 +8,7 @@
 
   Modifications by Douglas Bates <bates@stat.wisc.edu>, Nov. 2010
   Modifications by Tomas Kalibera <tomas.kalibera@gmail.com> Aug. 2016.
+  Modifications by K Hervé Dakpo <k-herve.dakpo@inrae.fr> Dec. 2023.
 */
 
 
@@ -28,7 +29,7 @@ void installPar(int nn, double x[], SEXP rho) {
     SEXP PAR = findVarInFrame(rho, install(".x"));
     double *xpt = REAL(PAR);
     if (LENGTH(PAR) != nn)
-	error("Dimension mismatch, length(.x) = %d != n = $d", LENGTH(PAR), nn);
+	error("Dimension mismatch, length(.x) = %d != n = %d", LENGTH(PAR), nn);
     for (i = 0; i < nn; i++) xpt[i] = x[i] ;
 }
 
@@ -78,9 +79,9 @@ SEXP mfopt(SEXP rho) {
     if (LENGTH(GRSTEP) < 2 || !isReal(GRSTEP))
 	error(".eps must be a numeric vector of length >= 2");
     if (LENGTH(PAR) != n || !isReal(PAR))
-	error("Dimension mismatch, length(.par) = %d != n = $d", LENGTH(PAR), n);
+	error("Dimension mismatch, length(.par) = %d != n = %d", LENGTH(PAR), n);
     if (LENGTH(W) != iw || !isReal(W))
-	error("Dimension mismatch, length(.w) = %d != .iw = $d", LENGTH(W), iw);
+	error("Dimension mismatch, length(.w) = %d != .iw = %d", LENGTH(W), iw);
 
     // duplicate dx, maxfun, .w because they are input/output arguments
     maxfun = PROTECT(duplicate(maxfun));
