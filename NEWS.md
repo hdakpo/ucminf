@@ -1,3 +1,9 @@
+# ucminf 1.2.2
+
+## WARNING SUPPRESSION
+
+* Making Fortran 2018 as default and loop changes to suppress warnings
+
 # ucminf 1.2.1
 
 ## BUG FIXES

@@ -1,6 +1,6 @@
 Package: ucminf
 Title: General-Purpose Unconstrained Non-Linear Optimization
-Version: 1.2.1
+Version: 1.2.2
 Authors@R: c(
     person("K Hervé", "Dakpo", email = "k-herve.dakpo@inrae.fr", 
     role = c("ctb", "cre")),
@@ -17,7 +17,7 @@ URL: https://github.com/hdakpo/ucminf
 BugReports: https://github.com/hdakpo/ucminf/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Depends: 
     R (>= 3.5.0)
 Suggests: 

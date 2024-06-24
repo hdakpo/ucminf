@@ -20,7 +20,8 @@
 #'
 #' @aliases ucminf-package
 #'
-#' @docType package
+# @docType package
+#' _UCMINF
 #'
 #' @useDynLib ucminf, mfopt, .registration = TRUE, .fixes = "C_"
 #'

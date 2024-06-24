@@ -72,8 +72,9 @@ C         ... Check gradient
 C           ... DX is too small
             ICONTR = -4
           ELSE
-            DO  10  I = 1, 3
-  10          W(I+4) = DBLE(INDX(I))
+            DO  I = 1, 3
+              W(I+4) = DBLE(INDX(I))
+            END DO
           ENDIF
           RETURN
         ENDIF
@@ -101,15 +102,16 @@ C         ... Restore given  D
           USEDEL = .FALSE.
         ELSE
 C         ... Initialize inverse Hessian to unit matrix
-          DO  20  I = HN, WN
-  20        W(I) = 0D0
+          DO  I = HN, WN
+            W(I) = 0D0
+          END DO
           II = DN
           DI = N
-          DO  30  I = 1, N
+          DO  I = 1, N
             W(II) = 1D0
             II = II + DI
             DI = DI - 1
-  30      CONTINUE
+         END DO
           USEDEL = .TRUE.
         ENDIF
 C       ... First call of FDF
@@ -233,7 +235,7 @@ C  Parameters
 C      EXTERNAL          FDF
       INTEGER           N, NEV, GRAD, RHO(*)
       DOUBLE PRECISION  X(N),F,G(N),H(N),W(*),ALPHA,FN,SLPS(2)
-      DOUBLE PRECISION  GRSTEP(2)      
+      DOUBLE PRECISION  GRSTEP(2)
 C  Local variables
       LOGICAL           OK,STOP
       INTEGER           MEVAL,NG,NX
@@ -366,7 +368,7 @@ C and delete from line ??? to the end of the file
 C
         FAIL = 0
         KK = 1
-        DO  10  K = 1, N
+        DO  K = 1, N
 C         ... Test for pos def
           IF  (A(KK) .LE. 0D0)  THEN
             FAIL = K
@@ -381,7 +383,7 @@ C           ... Compute k'th column and update trailing submatrix
             CALL DSPR('L',NK, -1D0,A(KK+1),1, A(KN))
             KK = KN
           ENDIF
-  10    CONTINUE
+        END DO
         RETURN
 ***************************  End of  SPCHOL  ***************************
       END
@@ -399,13 +401,15 @@ C      EXTERNAL          FDF
       INTRINSIC         ABS, MAX
 C       ... Initialize
         FAIL = 1
-        DO  10  I = 1, 4
-  10      DIFF(I) = 0D0
-        DO  20  I = 1, 3
-  20      INDX(I) = 0
+        DO  I = 1, 4
+          DIFF(I) = 0D0
+        END DO
+        DO  I = 1, 3
+          INDX(I) = 0
+        END DO
         CALL FDF(N,X,G,F,GRAD,GRSTEP,RHO)
 C       ... Run through components of X
-        DO  30  I = 1, N
+        DO  I = 1, N
           DIFF(1) = MAX(DIFF(1), ABS(G(I)))
           XI = X(I)
 C         ... Forward
@@ -439,7 +443,7 @@ C         ... Extrapolated
           ENDIF
 C         ... Restore x(i)
           X(I) = XI
-  30    CONTINUE
+       END DO
         FAIL = 0
         RETURN
 **************************  end of CHKDFN   ****************************
@@ -467,7 +471,7 @@ c$$$        J2 = J2 + 5
 c$$$        IF  (J2 .GT. I2)  J2 = I2
 c$$$        WRITE(UNT,'(1X,A,A,I3,A,I3,A,T18,1P1D10.3,1P4D12.3)')
 c$$$     /        NAME,'(',J1,'..',J2,') =',(X(J), J=J1,J2)
-c$$$        CALL DBLEPR (UNT, -1, X(1), 0)         
+c$$$        CALL DBLEPR (UNT, -1, X(1), 0)
 c$$$        GOTO 10
 c$$$**************************  end of  PRVCTR  ****************************
 c$$$      END
@@ -486,7 +490,7 @@ c ------------------------------------------------------------------------------
          CALL GR(N, X, F, G, GRAD, GRSTEP, RHO)
       ENDIF
       END
-        
+
 
 c ------------------------------------------------------------------------------
 c$$$      SUBROUTINE FUNC(N, X, VALUE)
@@ -494,14 +498,14 @@ c$$$      IMPLICIT NONE
 c$$$      INTEGER N
 c$$$      DOUBLE PRECISION X(N), VALUE
 c$$$      CALL CFUNC(N, X, VALUE)
-c$$$      END      
+c$$$      END
 c$$$
 c$$$      SUBROUTINE USRGR(N, X, G)
 c$$$      IMPLICIT NONE
 c$$$      INTEGER N
 c$$$      DOUBLE PRECISION X(N), G(N)
 c$$$      CALL CGRAD(N, X, G)
-c$$$      END      
+c$$$      END
 
       SUBROUTINE GR(N, X, F, G, GRAD, GRSTEP, RHO)
       IMPLICIT NONE
@@ -514,7 +518,7 @@ c$$$      END
       DO I=1,N
          DO J=1,N
             X2(J) = X(J)
-         ENDDO
+         END DO
          DX = ABS(X2(I)) * GRSTEP(1) + GRSTEP(2)
          X2(I) = X2(I) + DX
          CALL FUNC(N, X2, F2, RHO)
@@ -525,6 +529,6 @@ c$$$      END
             CALL FUNC(N, X2, F3, RHO)
             G(I) = (F2-F3)/(2*DX)
          ENDIF
-      ENDDO
+      END DO
       END
 
