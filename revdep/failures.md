@@ -1,55 +1,340 @@
-# mets
+# apsimx ()
 
-<details>
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
 
-* Version: 1.3.4
-* GitHub: https://github.com/kkholst/mets
-* Source code: https://github.com/cran/mets
-* Date/Publication: 2024-02-16 19:10:07 UTC
-* Number of recursive dependencies: 95
+Run `revdepcheck::revdep_details(, "apsimx")` for more info
 
-Run `revdepcheck::revdep_details(, "mets")` for more info
+## Error before installation
 
-</details>
+### Devel
 
-## Newly broken
+```
 
-*   R CMD check timed out
-    
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# cxr ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "cxr")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# eicm (1.0.3)
+
+* GitHub: <https://github.com/miguel-porto/eicm>
+* Email: <mailto:mpbertolo@gmail.com>
+* GitHub mirror: <https://github.com/cran/eicm>
+
+Run `revdepcheck::revdep_details(, "eicm")` for more info
+
+## Newly fixed
+
+*   checking dependencies in R code ... NOTE
+     ```
+     Namespace in Imports field not imported from: ‘snow’
+       All declared Imports should be used.
+     ```
 
 ## In both
 
-*   checking running R code from vignettes ...
-    ```
-      'basic-dutils.Rmd' using 'UTF-8'... OK
-      'binomial-family.Rmd' using 'UTF-8'... OK
-      'binomial-twin.Rmd' using 'UTF-8'... OK
-      'binreg-TRS.rmd' using 'UTF-8'... OK
-      'binreg-ate.Rmd' using 'UTF-8'... OK
-      'binreg.Rmd' using 'UTF-8'... OK
-      'cifreg.Rmd' using 'UTF-8'... OK
-      'glm-utility.Rmd' using 'UTF-8'... OK
-      'haplo-discrete-ttp.Rmd' using 'UTF-8'... OK
-      'interval-discrete-survival.Rmd' using 'UTF-8'... OK
-    ...
-    > margph <- phreg(Surv(time, cancer) ~ strata(country) + 
-    +     cluster(id), data = prt)
-    
-    > plot(margph)
-    
-    > summary(fitco1)
-    
-      When sourcing 'time-to-event-family-studies-arev.R':
-    Erreur : objet 'fitco1' introuvable
-    Exécution arrêtée
-    ```
+*   R CMD check timed out
 
-*   checking installed package size ... NOTE
-    ```
-      installed size is  8.7Mb
-      sub-directories of 1Mb or more:
-        R      1.7Mb
-        doc    2.8Mb
-        libs   2.3Mb
-    ```
 
+# flexFitR ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "flexFitR")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# INLAvaan ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "INLAvaan")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# metafor ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "metafor")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# mets ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "mets")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# misclassGLM ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "misclassGLM")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# MixSemiRob ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "MixSemiRob")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# optimizeR ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "optimizeR")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# projpred ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "projpred")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# TwoTimeScales ()
+
+* GitHub: <https://github.com/hdakpo/ucminf>
+* Email: <mailto:k-herve.dakpo@inrae.fr>
+
+Run `revdepcheck::revdep_details(, "TwoTimeScales")` for more info
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```

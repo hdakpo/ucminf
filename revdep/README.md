@@ -1,30 +1,42 @@
 # Platform
 
-|field    |value                                                                                 |
-|:--------|:-------------------------------------------------------------------------------------|
-|version  |R version 4.4.0 (2024-04-24 ucrt)                                                     |
-|os       |Windows 11 x64 (build 22631)                                                          |
-|system   |x86_64, mingw32                                                                       |
-|ui       |RStudio                                                                               |
-|language |(EN)                                                                                  |
-|collate  |French_France.utf8                                                                    |
-|ctype    |French_France.utf8                                                                    |
-|tz       |Europe/Paris                                                                          |
-|date     |2024-06-24                                                                            |
-|rstudio  |2024.04.2+764 Chocolate Cosmos (desktop)                                              |
-|pandoc   |3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown) |
+|field    |value                                                                       |
+|:--------|:---------------------------------------------------------------------------|
+|version  |R version 4.5.3 (2026-03-11)                                                |
+|os       |macOS Tahoe 26.3.1                                                          |
+|system   |aarch64, darwin25.3.0                                                       |
+|ui       |RStudio                                                                     |
+|language |(EN)                                                                        |
+|collate  |en_US.UTF-8                                                                 |
+|ctype    |en_US.UTF-8                                                                 |
+|tz       |Europe/Paris                                                                |
+|date     |2026-04-02                                                                  |
+|rstudio  |2026.01.1+403 Apple Blossom (desktop)                                       |
+|pandoc   |NA                                                                          |
+|quarto   |1.8.25 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto |
 
 # Dependencies
 
 |package |old   |new   |Δ  |
 |:-------|:-----|:-----|:--|
-|ucminf  |1.2.1 |1.2.2 |*  |
+|ucminf  |1.2.2 |1.2.3 |*  |
 
 # Revdeps
 
-## Failed to check (1)
+## Failed to check (12)
 
-|package |version |error    |warning |note |
-|:-------|:-------|:--------|:-------|:----|
-|[mets](failures.md#mets)|1.3.4   |1 __+1__ |        |1    |
+|package       |version |error |warning |note |
+|:-------------|:-------|:-----|:-------|:----|
+|apsimx        |?       |      |        |     |
+|cxr           |?       |      |        |     |
+|eicm          |1.0.3   |1     |        |-1   |
+|flexFitR      |?       |      |        |     |
+|INLAvaan      |?       |      |        |     |
+|metafor       |?       |      |        |     |
+|mets          |?       |      |        |     |
+|misclassGLM   |?       |      |        |     |
+|MixSemiRob    |?       |      |        |     |
+|optimizeR     |?       |      |        |     |
+|projpred      |?       |      |        |     |
+|TwoTimeScales |?       |      |        |     |
 

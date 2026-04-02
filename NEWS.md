@@ -1,3 +1,15 @@
+# ucminf 1.2.3
+
+## OTHER USER NON VISIBLE CHANGES
+
+* Updated native code for compatibility with upcoming R changes, including 
+stricter native routine registration
+
+## WARNING SUPPRESSION
+
+* Remove non-API call to R: 'Rf_findVarInFrame' in interface.c file to suppress 
+warnings
+
 # ucminf 1.2.2
 
 ## WARNING SUPPRESSION
